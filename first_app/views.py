@@ -40,3 +40,5 @@ def test(request):
     # var = {'user_logged_in' : True , 'num_list' : [1,2,3,4]}
     return render(request,'first_app/test.html')
 
+def img_test(request):
+    return render(request,'first_app/static_test.html')

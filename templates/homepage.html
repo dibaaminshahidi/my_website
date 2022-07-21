@@ -1,13 +1,15 @@
+{%load static%}
 <html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel ="stylesheet" href = "{% static 'style.css' %}">
+        {% comment %} <link rel="stylesheet" href="{% static "first_app/style.css" %}" > {% endcomment %}
+
         <title>Document</title>
     </head>
     <body>
-        {% comment %} <img src = "{% static 'app/G.JPG' %}"  alt= 'please'> {% endcomment %}
-
         <h1>
             homepage
         </h1>
@@ -18,6 +20,10 @@
         <h2>
             <a href = "{%url 'first_app:test'%}">
                 Test
+        </h2>
+        <h2>
+            <a href = "{%url 'first_app:img_test'%}">
+            Test IMG
         </h2>
     </body>
     </html>

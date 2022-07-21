@@ -9,7 +9,8 @@ urlpatterns = [
     # path('<int:x>/<int:y>',view= views.add_result) # dynamic(more param) routing
     path('',views.example_view,name='example'), #domain.com/first_app
     # path('variable',views.var_view,name='variable'),
-    path('test',views.test,name='test')
+    path('test',views.test,name='test'),
+    path('img_test',views.img_test,name='img_test')
 
      #domain.com/first_app
 
