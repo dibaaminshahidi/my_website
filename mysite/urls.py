@@ -26,5 +26,8 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('',view= views.home_view,name='Homepage'), #Homepage
     path('first_app/',include('first_app.urls')),
+    path('office/',include('office.urls')),
+    path('car/',include('car.urls')),
+
 ]
 
