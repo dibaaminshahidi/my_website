@@ -8,6 +8,7 @@ def review(request):
         form = Review_form(request.POST)
         if form.is_valid():
             print(form.cleaned_data)
+            form.save()
             return redirect(reverse('car:Thanks'))
     else:
         form = Review_form()
