@@ -1,7 +1,9 @@
+import django
 from django.urls import reverse
 from pydoc_data.topics import topics
 from django.shortcuts import render
 from django.http import Http404, HttpResponse, HttpResponseNotFound, HttpResponseRedirect
+from django.views.generic import TemplateView
 # Create your views here.
 
 # my_views = {
@@ -42,3 +44,6 @@ def test(request):
 
 def img_test(request):
     return render(request,'first_app/static_test.html')
+
+class ClassBased(TemplateView):
+    template_name = 'first_app/class_based.html'
